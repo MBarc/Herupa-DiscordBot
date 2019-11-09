@@ -6,9 +6,9 @@ Initializer: $
 ##Commands:
 
 -Birthday:
-  - Usage: $birthday <month-day-year>\
-  - Sends the birthday person a private message saying "Happy birthday <birthday person's name>, from <array of administrators' names>\
-  - Message includes combo of picture template + birthday person's profile picture.\
+  - Usage: $birthday <month-day-year> \
+  - Sends the birthday person a private message saying "Happy birthday <birthday person's name>, from <array of administrators' names> \ 
+  - Message includes combo of picture template + birthday person's profile picture. \
   
 -Member of the week:\
   -Usage: This command is automatic, cannot be called upon.\
