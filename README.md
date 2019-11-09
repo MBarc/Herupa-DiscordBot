@@ -20,6 +20,6 @@ Initializer: $
     
             Most messages:
 
--Harupa:\
-  -Usage: $harupa\
+-Herupa:\
+  -Usage: $herupa\
   -Harupa Bot joins the voice channel plays the 'Google Translate Audio of Harupa', then leaves.\
