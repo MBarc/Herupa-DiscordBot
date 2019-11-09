@@ -10,3 +10,6 @@ auth = dict{
   CLIENT_SECRET = '1a2b3c'
   }
   
+start = dict{
+  bot_prefix = "$"
+  }
