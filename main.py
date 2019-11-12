@@ -7,7 +7,7 @@ import config # in the same directory ; imports bot_prefix and token
 import asyncio
 import datetime # for birthday commmand
 import json # for databases
-import pprint
+import random #for member of the week
 
 from discord.ext.commands import Bot
 
@@ -19,8 +19,36 @@ async def on_ready():
   print(client.user.name)
   print(client.user.id)
   print('-------------')
+  await member_of_the_week()
   await birthday_background()
              
+@client.command(name='herupa',
+                description = 'Herupa will join the voice channel that the user in and say her name.',
+                brief = "Hear Herupa's voice.",
+                pass_context = True)
+async def herupa(context):
+    print("Herupa command executed by %s." % context.message.author.name)
+    # grab the user who sent the command
+    user = context.message.author
+    voice_channel = user.voice.voice_channel
+    channel = None
+    # only play music if user is in a voice channel
+    if voice_channel!= None:
+        # grab user's voice channel
+        channel = voice_channel.name
+        await client.say('User is in channel: '+ channel)
+        # create StreamPlayer
+        vc = await client.join_voice_channel(voice_channel)
+        player = vc.create_ffmpeg_player('herupa.mp3')
+        player.start()
+        while not player.is_done():
+            await asyncio.sleep(1)
+        # disconnect after the player has finished
+        player.stop()
+        await vc.disconnect()
+    else:
+        await client.say('User is not in a channel.')
+    
 @client.command(name='birthday',
                 description = 'Sends member a private message wishing a happy birthday from the administrators. Format is MMDD.',
                 brief = 'Sends user a PM wishing happy birthday.',
@@ -93,5 +121,28 @@ async def birthday_background():
           except Exception as e:
             #print(str(e))
             continue
+            
+ async member_of_the_week():
+    for server in client.guilds:
+      
+      members = []
+      for member in server.members:
+          members.append(member.name)
+          
+      for channel in server.channels:
+              
+              if channel.name == 'Member of the Week':
+                  last_message_id =channel.last_message() #returns the ID of the last message sent in the channel
+                  message = fetch_message(last_message_id)
+                
+                  when_message_sent = last_message_id.created_at
+                  current_week = datetime.date(datetime.now().year, datetime.now().month, datetime.now().day).isocalendar()[1]
+                
+                  if when_message_sent == current_week:
+                    pass
+                  else:
+                    await channel.sent("Congratulations to %s on being this week's Member of the Week! We appreciate ya!" % str(random.choice(members)))
+            
+  
 
 client.run(config.auth['TOKEN'])
