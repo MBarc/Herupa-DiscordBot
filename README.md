@@ -5,7 +5,7 @@ Initializer: $
 
 ### Commands:
 
-- Birthday:
+- [ ] Birthday:
   - Usage: $birthday MMDD 
   - Sends the birthday person a private message saying "Happy birthday <birthday person's name>, from <array of administrators' names> 
   - Message includes combo of picture template + birthday person's profile picture. 
@@ -35,3 +35,7 @@ Initializer: $
 - What to watch:
   - Usage: $w2w
   - Sends random link from Netflix, Hulu, or Crunchy Roll
+  
+- Survery
+  - Usage: $survey <prompt> <option 1> <option 2> . . . <option n>
+  - Sends a survey monkey link
