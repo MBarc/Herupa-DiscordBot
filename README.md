@@ -3,10 +3,10 @@ Open source discord bot that executes a collection of miscellaneous commands.
 
 Initializer: $
 
-##Commands:
+### Commands:
 
--Birthday:
-  - Usage: $birthday <month-day-year> \
+- Birthday:
+  - Usage: $birthday MMDD \
   - Sends the birthday person a private message saying "Happy birthday <birthday person's name>, from <array of administrators' names> \ 
   - Message includes combo of picture template + birthday person's profile picture. \
   
