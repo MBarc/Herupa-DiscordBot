@@ -12,7 +12,7 @@ Initializer: $
 
 - Herupa:
   - Usage: $herupa
-  - Harupa Bot joins the voice channel plays the 'Google Translate Audio of Harupa', then leaves.
+  - Herupa Bot joins the voice channel plays the 'Google Translate Audio of Herupa', then leaves.
   
 - Member of the week:
   - Usage: This command is automatic, cannot be called upon.
