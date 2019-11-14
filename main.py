@@ -142,9 +142,6 @@ async def member_of_the_week():
     #Removes admin from members list
     members = (set(members) - set(admins))
 
-    #print(members)
-
-
     for channel in server.channels:
       if channel.name == '\U0001f38amember-of-the-week\U0001f38a':
 
@@ -157,8 +154,7 @@ async def member_of_the_week():
 
         current_date = datetime.datetime.now()
         current_week = datetime.date(current_date.year, current_date.month, current_date.day).isocalendar()[1]
-
-                
+      
         if when_message_sent == current_week:
           pass
         else:
