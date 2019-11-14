@@ -17,7 +17,7 @@ Initializer: $
 - [x] Member of the week:
   - Usage: This command is automatic, cannot be called upon.
   
-- [ ]Leaderboards:
+- [ ] Leaderboards:
   - Usage: $leaderboards
   - Sends of list of top members in every category
     Example: 
@@ -28,7 +28,7 @@ Initializer: $
             Online: <username> came online X times!
             Offline: <username> only came online X times!
   
-- [ ]ASMR:
+- [ ] ASMR:
   - Usage: $asmr
   - Plays cringey asmr videos in voice chat
   
