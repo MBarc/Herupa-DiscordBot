@@ -122,27 +122,48 @@ async def birthday_background():
             #print(str(e))
             continue
             
- async member_of_the_week():
-    for server in client.guilds:
-      
-      members = []
-      for member in server.members:
-          members.append(member.name)
-          
-      for channel in server.channels:
-              
-              if channel.name == 'Member of the Week':
-                  last_message_id =channel.last_message() #returns the ID of the last message sent in the channel
-                  message = fetch_message(last_message_id)
+async def member_of_the_week():
+  print("Started Member of the Week function!")
+  for server in client.guilds:
+
+    #Checks to see if the user is an admin, bot, or regular member
+    members = []
+    admins = []
+    for member in server.members:
+      if member.bot: 
+        pass #does not add bot to members list
+      else:
+        for role in member.roles:
+          if role.name == 'the joestars':
+            admins.append(member)
+
+        members.append(member.name)
+
+    #Removes admin from members list
+    members = (set(members) - set(admins))
+
+    #print(members)
+
+
+    for channel in server.channels:
+      if channel.name == '\U0001f38amember-of-the-week\U0001f38a':
+
+        try:
+          pins = await discord.abc.Messageable.pins(channel)
+          last_pin = pins[-1].created_at.now()
+          when_message_sent = datetime.date(last_pin.year, last_pin.month, last_pin.day).isocalendar()[1]
+        except Exception as e:
+          when_message_sent = 57 # current week will never be equal to this ; only 56 weeks in a year
+
+        current_date = datetime.datetime.now()
+        current_week = datetime.date(current_date.year, current_date.month, current_date.day).isocalendar()[1]
+
                 
-                  when_message_sent = last_message_id.created_at
-                  current_week = datetime.date(datetime.now().year, datetime.now().month, datetime.now().day).isocalendar()[1]
-                
-                  if when_message_sent == current_week:
-                    pass
-                  else:
-                    await channel.sent("Congratulations to %s on being this week's Member of the Week! We appreciate ya!" % str(random.choice(members)))
-            
-  
+        if when_message_sent == current_week:
+          pass
+        else:
+          bot_message = await channel.send("Congratulations to %s on being this week's Member of the Week! We appreciate ya!" % str(random.choice(members).mention))
+
+          pin_bot_message = await bot_message.pin()
 
 client.run(config.auth['TOKEN'])
