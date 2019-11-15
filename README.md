@@ -94,8 +94,8 @@ Initializer: $
   - [ ] Sends a survey monkey link.
   
 - [ ] Reddit:
-  - Usage: $reddit <subreddit> <channel>
-  - [ ] Takes the given <subreddit> and will send every new post to the specified <channel>.
+  - Usage: $reddit <subreddit> <text_channel>
+  - [ ] Takes the given <subreddit> and will send every new post to the specified <text_channel>.
   
 - [ ] Animal Facts:
   - Usage: $animalfact <optional animal> <optional nsfw>
