@@ -75,7 +75,7 @@ Initializer: $
   
 - [ ] Copy Cat:
   - Usage: $copy <username>
-  - **Parts of this function are currently not possible. This function will be complete as much as possible and marked finished.**
+  - **Parts of this function are currently not possible. This function will be completed as much as possible and marked finished.**
   - [ ] Bot will repeat after target/<username> 
   - [ ] Follows target to voice channel to play their own voice back at them.
   
@@ -93,6 +93,29 @@ Initializer: $
   - Usage: $survey <prompt> <option 1> <option 2> . . . <option n>
   - [ ] Sends a survey monkey link.
   
+- [ ] Reddit:
+  - Usage: $reddit <subreddit> <channel>
+  - [ ] Takes the given <subreddit> and will send every new post to the specified <channel>.
+  
+- [ ] Animal Facts:
+  - Usage: $animalfact <optional animal> <optional nsfw>
+  - [ ] Sends picture of animal.
+  - [ ] Sends a random facts about any animal, could be specified. The facts could be nsfw if specified.
+
+- [ ] Rock, Papers, Scissors:
+  - Usage: $rps <user's choice>
+  - [ ] Herupa will randomly pick between rock, paper, or scissors and send it in the channel prompted.
+  
+- [ ] Coin Flip:
+  - Usage: $flip <user's choice>
+  - Herupa will randomly pick between heads and tails and let the user know if their <user's choice> was correct.
+  
+- [ ] Assign:
+  - Usage: $assign <role>
+  - Herupa will assign the author the given <role>. 
+
 - [ ] Help:
   - Usage: $help
   - [ ] Sends relevant info for every command in the channel prompted.
+  
+  
