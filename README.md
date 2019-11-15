@@ -9,28 +9,30 @@ Initializer: $
 
 - [ ] Birthday:
   - Usage: $birthday MMDD 
-  - Sends the birthday person a private message saying "Happy birthday <birthday person's name>, from <array of administrators' names> 
+  - [ ] Sends the birthday person a private message saying "Happy birthday <birthday person's name>, from <array of administrators' names> 
   - [ ] Message includes birthday meme. 
 
 - [X] Herupa:
   - Usage: $herupa
-  - Herupa Bot joins the voice channel plays the 'Google Translate Audio of Herupa', then leaves.
+  - [X] Herupa Bot joins the voice channel plays the 'Google Translate Audio of Herupa', then leaves.
   
 - [x] Member of the week:
   - Usage: This command is automatic, cannot be called upon.
+  - Herupa picks a member of the week and sends them a congratulations message in the appropriate channel.
   
 - [X] Join:
   - Usage: $join
-  - Joins voice channel.
+  - [X] Joins voice channel.
   
 - [X] Leave:
   - Usage: $leave
-  - Leaves voice channel.
+  -[X]Leaves voice channel.
   
-- [X] Play:
+- [ ] Play:
   - Usage: $play <link>
-  - Plays YouTube or Spotify links. 
-  - Audio files are automatically added to a queue.
+  - [X] Plays YouTube links.
+  - [ ] Plays Spotify links. 
+  - [X] Audio files are automatically added to a queue.
   
 - [X] Pause:
   - Usage: $pause
@@ -38,11 +40,11 @@ Initializer: $
   
 - [X] Resume:
   - Usage: $resume
-  - Resumes whatever audio file is paused.
+  - [X] Resumes whatever audio file is paused.
   
 - [X] Stop:
   - Usage: $stop
-  - Completely cancels/stops whatever audio file is playing.
+  - [X] Completely cancels/stops whatever audio file is playing.
   
 - [X] Queue:
   - Usage: $queue
@@ -50,7 +52,7 @@ Initializer: $
   
 - [ ] Leaderboards:
   - Usage: $leaderboards
-  - Sends of list of top members in every category
+  - [ ] Sends of list of top members in every category.
     Example: 
     
             Most messages: <username> with X messages sent!
@@ -61,33 +63,33 @@ Initializer: $
   
 - [ ] ASMR:
   - Usage: $asmr
-  - Plays cringey asmr videos in voice chat
+  - [ ] Plays cringey asmr videos in voice chat.
   
-- [ ] Dank airhorn:
+- [ ] Dank Airhorn:
   - Usage: $dank
   - Goes in every voice chat, one by one, and plays the Dank Airhorn audio file.
   
 - [ ] Clear:
   - Usage: $clear <int>
-  - Deletes the latest <int> messages in th4e channel that the command was sent in.
+  - Deletes the latest <int> messages in the channel that the command was sent in.
   
 - [ ] Copy Cat:
   - Usage: $copy <username>
-  - Bot will repeat after target/<username> and follow target to voice channel to play thier own voice back at them.
+  - Bot will repeat after target/<username> and follow target to voice channel to play their own voice back at them.
   
 - [ ] Record:
   - Usage: $record
   - Records all audio in a voice channel.
   - Stops recording once author leaves voice channel.
   
-- [ ] What to watch:
+- [ ] What To Watch:
   - Usage: $w2w
-  - Sends random link from Netflix, Hulu, or Crunchy Roll
+  - Sends random link from Netflix, Hulu, or Crunchy Roll.
   
-- [ ] Survery
+- [ ] Survery:
   - Usage: $survey <prompt> <option 1> <option 2> . . . <option n>
-  - Sends a survey monkey link
+  - Sends a survey monkey link.
   
-- [ ] Help
+- [ ] Help:
   - Usage: $help
   - Sends relevant info for every command in the channel prompted.
