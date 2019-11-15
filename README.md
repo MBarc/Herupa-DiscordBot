@@ -75,7 +75,7 @@ Initializer: $
   
 - [ ] Copy Cat:
   - Usage: $copy <username>
-  - **Parts of this function are currently.**
+  - **Parts of this function are currently not possible. This function will be complete as much as possible and marked finished.**
   - [ ] Bot will repeat after target/<username> 
   - [ ] Follows target to voice channel to play their own voice back at them.
   
