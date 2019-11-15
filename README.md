@@ -74,7 +74,7 @@ Initializer: $
   - [ ] Deletes the latest <int> messages in the channel that the command was sent in.
   
 - [ ] Copy Cat:
-  - Usage: $copy <username>
+  - Usage: $copy <user_name>
   - **Parts of this function are currently not possible. This function will be completed as much as possible and marked finished.**
   - [ ] Bot will repeat after target/<username> 
   - [ ] Follows target to voice channel to play their own voice back at them.
@@ -98,20 +98,21 @@ Initializer: $
   - [ ] Takes the given <subreddit> and will send every new post to the specified <text_channel>.
   
 - [ ] Animal Facts:
-  - Usage: $animalfact <optional animal> <optional nsfw>
+  - Usage: $animalfact <optional_animal> <optional_nsfw>
   - [ ] Sends picture of animal.
   - [ ] Sends a random facts about any animal, could be specified. The facts could be nsfw if specified.
+  - [ ] Will take either the scientific name or the common name as an argument.
 
 - [ ] Rock, Papers, Scissors:
-  - Usage: $rps <user's choice>
+  - Usage: $rps <user's_choice>
   - [ ] Herupa will randomly pick between rock, paper, or scissors and send it in the channel prompted.
   
 - [ ] Coin Flip:
-  - Usage: $flip <user's choice>
+  - Usage: $flip <user's_choice>
   - Herupa will randomly pick between heads and tails and let the user know if their <user's choice> was correct.
   
 - [ ] Assign:
-  - Usage: $assign <role>
+  - Usage: $assign <server_role>
   - Herupa will assign the author the given <role>. 
 
 - [ ] Help:
