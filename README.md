@@ -18,7 +18,7 @@ Initializer: $
   
 - [x] Member of the week:
   - Usage: This command is automatic, cannot be called upon.
-  - Herupa picks a member of the week and sends them a congratulations message in the appropriate channel.
+  - [X] Herupa picks a member of the week and sends them a congratulations message in the appropriate channel.
   
 - [X] Join:
   - Usage: $join
@@ -26,7 +26,7 @@ Initializer: $
   
 - [X] Leave:
   - Usage: $leave
-  -[X]Leaves voice channel.
+  -[X] Leaves voice channel.
   
 - [ ] Play:
   - Usage: $play <link>
@@ -36,7 +36,7 @@ Initializer: $
   
 - [X] Pause:
   - Usage: $pause
-  - Pauses whatever audio file is playing.
+  - [X] Pauses whatever audio file is playing.
   
 - [X] Resume:
   - Usage: $resume
@@ -48,7 +48,7 @@ Initializer: $
   
 - [X] Queue:
   - Usage: $queue
-  - Adds audio files to queue.
+  - [X] Adds audio files to queue.
   
 - [ ] Leaderboards:
   - Usage: $leaderboards
@@ -67,29 +67,32 @@ Initializer: $
   
 - [ ] Dank Airhorn:
   - Usage: $dank
-  - Goes in every voice chat, one by one, and plays the Dank Airhorn audio file.
+  - [ ] Goes in every voice chat, one by one, and plays the Dank Airhorn audio file.
   
 - [ ] Clear:
   - Usage: $clear <int>
-  - Deletes the latest <int> messages in the channel that the command was sent in.
+  - [ ] Deletes the latest <int> messages in the channel that the command was sent in.
   
 - [ ] Copy Cat:
   - Usage: $copy <username>
-  - Bot will repeat after target/<username> and follow target to voice channel to play their own voice back at them.
+  - **Parts of this function are currently.**
+  - [ ] Bot will repeat after target/<username> 
+  - [ ] Follows target to voice channel to play their own voice back at them.
   
 - [ ] Record:
   - Usage: $record
-  - Records all audio in a voice channel.
-  - Stops recording once author leaves voice channel.
+  - **This function is currently not possible with the current version of the Discord API but it is a planned for development.**
+  - [ ] Records all audio in a voice channel.
+  - [ ] Stops recording once author leaves voice channel.
   
 - [ ] What To Watch:
-  - Usage: $w2w
-  - Sends random link from Netflix, Hulu, or Crunchy Roll.
+  - Usage: $w2w <source> <genre>
+  - [ ] Sends random link from the user's choice of either Netflix, Hulu, or Crunchy Roll.
   
 - [ ] Survery:
   - Usage: $survey <prompt> <option 1> <option 2> . . . <option n>
-  - Sends a survey monkey link.
+  - [ ] Sends a survey monkey link.
   
 - [ ] Help:
   - Usage: $help
-  - Sends relevant info for every command in the channel prompted.
+  - [ ] Sends relevant info for every command in the channel prompted.
