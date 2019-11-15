@@ -1,3 +1,5 @@
+![alt text](https://github.com/MBarc/Herupa-DiscordBot/blob/master/herupaprofilepic.png)
+
 # Herupa-DiscordBot
 Open source discord bot that executes a collection of miscellaneous commands. 
 
@@ -85,3 +87,7 @@ Initializer: $
 - [ ] Survery
   - Usage: $survey <prompt> <option 1> <option 2> . . . <option n>
   - Sends a survey monkey link
+  
+- [ ] Help
+  - Usage: $help
+  - Sends relevant info for every command in the channel prompted.
