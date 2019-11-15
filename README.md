@@ -26,7 +26,7 @@ Initializer: $
   
 - [X] Leave:
   - Usage: $leave
-  -[X] Leaves voice channel.
+  - [X] Leaves voice channel.
   
 - [ ] Play:
   - Usage: $play <link>
