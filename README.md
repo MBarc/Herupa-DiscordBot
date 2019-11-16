@@ -70,8 +70,8 @@ Initializer: $
   - [ ] Goes in every voice chat, one by one, and plays the Dank Airhorn audio file.
   
 - [ ] Clear:
-  - Usage: $clear <int>
-  - [ ] Deletes the latest <int> messages in the channel that the command was sent in.
+  - Usage: $clear <int_number>
+  - [ ] Deletes the latest <int_number> messages in the channel that the command was sent in.
   
 - [ ] Copy Cat:
   - Usage: $copy <user_name>
@@ -86,11 +86,11 @@ Initializer: $
   - [ ] Stops recording once author leaves voice channel.
   
 - [ ] What To Watch:
-  - Usage: $w2w <source> <genre>
+  - Usage: $w2w <_source_> <_genre_>
   - [ ] Sends random link from the user's choice of either Netflix, Hulu, or Crunchy Roll.
   
-- [ ] Survery:
-  - Usage: $survey <prompt> <option 1> <option 2> . . . <option n>
+- [ ] Survey:
+  - Usage: $survey <_prompt_> <_option 1_> <_option 2_> . . . <_option n_>
   - [ ] Sends a survey monkey link.
   
 - [ ] Reddit:
