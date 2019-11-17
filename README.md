@@ -119,4 +119,13 @@ Initializer: $
   - Usage: $help
   - [ ] Sends relevant info for every command in the channel prompted.
   
+- [ ] Welcome Message:
+  - Usage: This command is automatic, cannot be called upon. 
+  - [ ] Sends a welcome message when member joins the server.
+  
+- [ ] Goodbye Message:
+  - Usage: This command is automatic, cannot be called upon. 
+  - [ ] Sends a message saying that the member has left the server.
+  - [ ] Also sends a private message saying goodbye.
+  
   
