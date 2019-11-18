@@ -7,7 +7,7 @@ import config # in the same directory ; imports bot_prefix and token
 import asyncio
 import datetime # for birthday commmand
 import json # for databases
-import random #for member of the week
+import random #for member of the week and coin flip
 
 from discord.ext.commands import Bot
 
@@ -162,11 +162,32 @@ async def member_of_the_week():
 
           pin_bot_message = await bot_message.pin()
           
-@client.command()
+@client.command(name='clear',
+                description = 'Allows user to delete messages in bulk.',
+                brief = 'Allows user to delete messages in bulk.',
+                pass_context = True)
 async def clear(ctx, amount = 5):
   if ctx.message.author.permissions.manage_messages:
     await ctx.channel.purge(limit = amount + 1) # +1 to delete the original command that triggered this function
   else:
     await ctx.channel.send("You do not have permissions to manage messages.") 
+    
+@client.command(name='flip',
+                description = 'Flips a coin.',
+                brief = 'Flips a coin.',
+                aliases = ['coinflip'],
+                pass_context = True)
+async def flip(ctx):
+  user_input = ctx.message.content
+  answer_choices = ['heads', 'tails']
+  bot_choice = random.choice(answer_choices)
+  if bot_choice == "heads" and user_input.lower() == bot_choice:
+    await ctx.channel.send("Heads! You were right!")
+  elif bot_choice == "tails" and user_input.lower() == bot_choice:
+    await ctx.channel.send("Tails! You were right!")
+  elif user_input.lower() != "heads" and user_input.lower() != "tails":
+    await ctx.channel.send('Please pick between "heads" or "tails".')
+  else:
+    await ctx.channel.send("You picked %s but the coin landed on %s" % (user_input, bot_choice)
 
 client.run(config.auth['TOKEN'])
