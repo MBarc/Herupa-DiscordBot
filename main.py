@@ -189,5 +189,25 @@ async def flip(ctx):
     await ctx.channel.send('Please pick between "heads" or "tails".')
   else:
     await ctx.channel.send("You picked %s but the coin landed on %s" % (user_input, bot_choice)
-
+                           
+@client.command(name='rps',
+                description = 'User plays "rock, paper, scissors" against the bot.',
+                brief = 'Play "rock, paper, scissors".',
+                pass_context = True)
+async def rps(ctx):
+  user_input = ctx.author.message.content
+  answer_choices = ['rock', 'paper', 'scissors']
+  bot_choice = random.choice(answer_choices)
+                           
+  if user_input.lower() == 'rock' and bot_choice == 'scissors':
+    await ctx.channel.send('You won! I picked scissors.')
+  elif user_input.lower() == 'paper' and bot_choice == 'rock':
+    await ctx.channel.send('You won! I picked rock.')
+  elif user_input.lower() == 'scissors' and bot_choice == 'paper':
+    await ctx.channel.send('You won! I picked paper.')
+  elif user_input.lower() == bot_choice:
+    await ctx.channel.send("It's a draw! We both picked %s." % bot_choice) 
+  else:
+    await ctx.channel.send("You lost! I picked %s." % bot_choice)
+                           
 client.run(config.auth['TOKEN'])
