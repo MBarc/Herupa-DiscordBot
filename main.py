@@ -258,7 +258,31 @@ async def on_member_remove(member):
                            
    await client.send(general_chat, message_choice)
       
-   
-                      
+                           
+@client.command(name='assign',
+                description = 'Assigns roles that can be given out freely.',
+                brief = 'Self assign either the YouTuber or Streamer role.',
+                aliases = ['giverole'],
+                pass_context = True)
+async def assign(ctx):
+  author = ctx.message.author
+  role = ctx.message.content
+  channel = ctx.message.channel
+                           
+  if role.lower() == "youtuber":
+                           
+    await client.add_roles(author, role)
+                           
+    await channel.send("You have been given the YouTuber role!")
+                          
+  elif role.lower() == "streamer":
+    
+    await client.add_roles(author, role)
+                           
+    await channel.send("You have been given the YouTuber role!")
+                          
+  else:
+                           
+    await channel.send("Not a valid role. I only have permission to assign the YouTuber and Streamer roles, please talk to an admin.")
                              
 client.run(config.auth['TOKEN'])
