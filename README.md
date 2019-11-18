@@ -9,7 +9,7 @@ Initializer: $
 
 - [ ] Birthday:
   - Usage: $birthday MMDD 
-  - [ ] Sends the birthday person a private message saying "Happy birthday <birthday person's name>, from <array of administrators' names> 
+  - [X] Sends the birthday person a private message saying "Happy birthday <birthday person's name>, from <array of administrators' names> 
   - [ ] Message includes birthday meme. 
 
 - [X] Herupa:
@@ -94,7 +94,7 @@ Initializer: $
   - [ ] Sends a survey monkey link.
   
 - [ ] Reddit:
-  - Usage: $reddit <subreddit> <text_channel>
+  - Usage: $reddit <_subreddit_> <text_channel>
   - [ ] Takes the given <subreddit> and will send every new post to the specified <text_channel>.
   
 - [ ] Animal Facts:
