@@ -161,5 +161,12 @@ async def member_of_the_week():
           bot_message = await channel.send("Congratulations to %s on being this week's Member of the Week! We appreciate ya!" % str(random.choice(members).mention))
 
           pin_bot_message = await bot_message.pin()
+          
+@client.command()
+async def clear(ctx, amount = 5):
+  if ctx.message.author.permissions.manage_messages:
+    await ctx.channel.purge(limit = amount + 1) # +1 to delete the original command that triggered this function
+  else:
+    await ctx.channel.send("You do not have permissions to manage messages.") 
 
 client.run(config.auth['TOKEN'])
