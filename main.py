@@ -220,14 +220,42 @@ async def on_member_join(member):
                       "Hey %s! Thanks for joining!",
                       "Enjoy your stay %s!",
                       "We got a live one! %s just joined the server!",
-                      "Congrats to %s for making the amazing descision to join this server!"]
+                      "Congrats to %s for making the amazing descision to join this server!",
+                      "Oh hey, %s! It's about time you joined the server!",
+                      "It's a bird, it's a plane, it's %s! Welcome to the server!",
+                      "Ladies and Gentlemen of the server, please put your hands together and welcome %s!",
+                      "If I had a dollar for every time %s joined the server, I'd have one dollar! Welcome!",
+                      "Welcome to the server %s! We were just talking about you!",
+                      "Welcome to the server, %s! Please wipe your shoes on the way in.",
+                      "HEY EVERYONE! %s FINALLY JOINED THE SERVER!",
+                      "Welcome to the server, %s! Make yourself at home!",
+                      "Welcome to the server, %s! We hope you don't regret this. . ."]
                            
-  message_choice = random.choice(welcome_messages) % member.name
-  await ctx.channel.send(message_choice)                         
+  message_choice = random.choice(welcome_messages) % member.name.mention                      
                            
+  general_chat = settings['channels']['general_chat_id']
                            
-  general_chat = settings['channels']['general_chat']
-     
+  await client.send(general_chat, message_choice)
                            
+@client.event
+async def on_member_remove(member):
+
+  goodbye_messages = ["%s just left the server! :(",
+                      "Leaving already, %s? We were just getting started!",
+                      "%s just left and we'll never be the same",
+                      "And for my next trick, POOF, %s has left the server!",
+                      "%s left the server and I've been in therapy ever since.",
+                      "%s just left the server to go get some milk! I'm sure they'll be right back!",
+                      "It's been so long since someone left, glad you guys are enjoying the server! Oh. . . actually . . . %s just left the server. That's embarrassing.",
+                      "%s just left the server. Thank you for your sacrifice!"]
+                           
+   message_choice = random.choice(goodbye_message) % member.name.mention
+                           
+   general_chat = settings['channels']['general_chat_id']
+                           
+   await client.send(general_chat, message_choice)
+      
+   
+                      
                              
 client.run(config.auth['TOKEN'])
