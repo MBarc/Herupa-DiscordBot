@@ -81,7 +81,7 @@ Initializer: $
   
 - [ ] Record:
   - Usage: $record
-  - **This function is currently not possible with the current version of the Discord API but it is a planned for development.**
+  - **This function is currently not possible with the current version of the Discord API but it is planned for development.**
   - [ ] Records all audio in a voice channel.
   - [ ] Stops recording once author leaves voice channel.
   
