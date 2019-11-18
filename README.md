@@ -95,7 +95,7 @@ Initializer: $
   
 - [ ] Reddit:
   - Usage: $reddit <_subreddit_> <text_channel>
-  - [ ] Takes the given <subreddit> and will send every new post to the specified <text_channel>.
+  - [ ] Takes the given <_subreddit_> and will send every new post to the specified <text_channel>.
   
 - [ ] Animal Facts:
   - Usage: $animalfact <optional_animal> <optional_nsfw>
@@ -109,7 +109,7 @@ Initializer: $
   
 - [ ] Coin Flip:
   - Usage: $flip <user's_choice>
-  - Herupa will randomly pick between heads and tails and let the user know if their <user's choice> was correct.
+  - Herupa will randomly pick between heads and tails and let the user know if their <user's_choice> was correct.
   
 - [ ] Assign:
   - Usage: $assign <server_role>
