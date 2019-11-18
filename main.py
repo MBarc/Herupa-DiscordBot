@@ -247,7 +247,10 @@ async def on_member_remove(member):
                       "%s left the server and I've been in therapy ever since.",
                       "%s just left the server to go get some milk! I'm sure they'll be right back!",
                       "It's been so long since someone left, glad you guys are enjoying the server! Oh. . . actually . . . %s just left the server. That's embarrassing.",
-                      "%s just left the server. Thank you for your sacrifice!"]
+                      "%s just left the server. Thank you for your sacrifice!",
+                      "%s left the server. Is it something we said?",
+                      "Anyone wanna leave the server? %s volunteers as tribute.",
+                      "Oh no! %s accidentally left the server! It was an accident. . .right?"]
                            
    message_choice = random.choice(goodbye_message) % member.name.mention
                            
