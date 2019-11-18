@@ -210,4 +210,24 @@ async def rps(ctx):
   else:
     await ctx.channel.send("You lost! I picked %s." % bot_choice)
                            
+@client.event
+async def on_member_join(member):
+  role = discord.utils.get(member.server.roles, name = settings['channels']['default_role'])
+  await client.add_roles(member, role)
+  
+  welcome_messages = ["Welcome %s! We're happy to have you here!",
+                      "Watch out people! %s just joined the server!",
+                      "Hey %s! Thanks for joining!",
+                      "Enjoy your stay %s!",
+                      "We got a live one! %s just joined the server!",
+                      "Congrats to %s for making the amazing descision to join this server!"]
+                           
+  message_choice = random.choice(welcome_messages) % member.name
+  await ctx.channel.send(message_choice)                         
+                           
+                           
+  general_chat = settings['channels']['general_chat']
+     
+                           
+                             
 client.run(config.auth['TOKEN'])
