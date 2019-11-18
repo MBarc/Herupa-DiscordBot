@@ -103,7 +103,7 @@ Initializer: $
   - [ ] Sends a random facts about any animal, could be specified. The facts could be nsfw if specified.
   - [ ] Will take either the scientific name or the common name as an argument.
 
-- [ ] Rock, Papers, Scissors:
+- [ ] Rock, Paper, Scissors:
   - Usage: $rps <user's_choice>
   - [ ] Herupa will randomly pick between rock, paper, or scissors and send it in the channel prompted.
   
