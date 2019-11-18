@@ -3,6 +3,8 @@
 # Herupa-DiscordBot
 Open source discord bot that executes a collection of miscellaneous commands. 
 
+This bot utlizies multiple APIs: Discord.py (rewrite), PRAW, Selenium, and 
+
 Initializer: $
 
 ### Commands:
@@ -128,4 +130,10 @@ Initializer: $
   - [ ] Sends a message saying that the member has left the server.
   - [ ] Also sends a private message saying goodbye.
   
-  
+  - [ ] Watch Party:
+  - Usage: $watchparty <_command_> **or** <_title_of_video_>
+  - [ ] Bot will host a Netflix Party that users can join.
+  - [ ] pause command will pause the video.
+  - [ ] play command will resume the video.
+  - [ ] rewind <_int_> will rewind the video by <_int_> seconds
+  - [ ] fastforward <_int_> will fast forward the video by <_int_> seconds
