@@ -33,7 +33,8 @@ Initializer: $
 - [ ] Play:
   - Usage: $play <link>
   - [X] Plays YouTube links.
-  - [ ] Plays Spotify links. 
+  - [X] Plays Spotify links. 
+  - [X] Plays Spotify playlists
   - [X] Audio files are automatically added to a queue.
   
 - [X] Pause:
