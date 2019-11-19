@@ -71,9 +71,9 @@ Initializer: $
   - Usage: $dank
   - [ ] Goes in every voice chat, one by one, and plays the Dank Airhorn audio file.
   
-- [ ] Clear:
+- [X] Clear:
   - Usage: $clear <int_number>
-  - [ ] Deletes the latest <int_number> messages in the channel that the command was sent in.
+  - [X] Deletes the latest <int_number> messages in the channel that the command was sent in.
   
 - [ ] Copy Cat:
   - Usage: $copy <user_name>
@@ -105,15 +105,15 @@ Initializer: $
   - [ ] Sends a random facts about any animal, could be specified. The facts could be nsfw if specified.
   - [ ] Will take either the scientific name or the common name as an argument.
 
-- [ ] Rock, Paper, Scissors:
+- [ X Rock, Paper, Scissors:
   - Usage: $rps <user's_choice>
-  - [ ] Herupa will randomly pick between rock, paper, or scissors and send it in the channel prompted.
+  - [X] Herupa will randomly pick between rock, paper, or scissors and send it in the channel prompted.
   
-- [ ] Coin Flip:
+- [X] Coin Flip:
   - Usage: $flip <user's_choice>
   - Herupa will randomly pick between heads and tails and let the user know if their <user's_choice> was correct.
   
-- [ ] Assign:
+- [X] Assign:
   - Usage: $assign <server_role>
   - Herupa will assign the author the given <role>. 
 
@@ -121,13 +121,13 @@ Initializer: $
   - Usage: $help
   - [ ] Sends relevant info for every command in the channel prompted.
   
-- [ ] Welcome Message:
+- [X] Welcome Message:
   - Usage: This command is automatic, cannot be called upon. 
-  - [ ] Sends a welcome message when member joins the server.
+  - [X] Sends a welcome message when member joins the server.
   
 - [ ] Goodbye Message:
   - Usage: This command is automatic, cannot be called upon. 
-  - [ ] Sends a message saying that the member has left the server.
+  - [X] Sends a message saying that the member has left the server.
   - [ ] Also sends a private message saying goodbye.
   
   - [ ] Watch Party:
