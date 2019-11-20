@@ -131,7 +131,7 @@ Initializer: $
   - [X] Sends a message saying that the member has left the server.
   - [ ] Also sends a private message saying goodbye.
   
-  - [ ] Watch Party:
+- [ ] Watch Party:
   - Usage: $watchparty <_command_> **or** <_title_of_video_>
   - [ ] Bot will host a Netflix Party that users can join.
   - [ ] pause command will pause the video.
