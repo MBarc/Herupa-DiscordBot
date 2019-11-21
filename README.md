@@ -5,6 +5,8 @@ Open source discord bot that executes a collection of miscellaneous commands.
 
 This bot utlizies multiple APIs: Discord.py (rewrite), PRAW, Selenium, and 
 
+(((Currently planning on refactoring main.py.)))
+
 Initializer: $
 
 ### Commands:
