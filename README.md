@@ -7,6 +7,7 @@ This bot utlizies multiple APIs: Discord.py (rewrite), PRAW, Selenium, and
 
 (((Started on refactoring main.py.)))
 (((Started on refactoring main.py.)))
+(((Started on refactoring main.py.)))
 
 
 Initializer: $
