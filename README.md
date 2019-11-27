@@ -22,36 +22,36 @@ Initializer: $
   - Usage: This command is automatic, cannot be called upon.
   - [X] Herupa picks a member of the week and sends them a congratulations message in the appropriate channel.
   
-- [X] Join:
+- [ ] Join:
   - Usage: $join
-  - [X] Joins voice channel.
+  - [ ] Joins voice channel.
   
-- [X] Leave:
+- [ ] Leave:
   - Usage: $leave
-  - [X] Leaves voice channel.
+  - [ ] Leaves voice channel.
   
 - [ ] Play:
   - Usage: $play <link>
-  - [X] Plays YouTube links.
-  - [X] Plays Spotify links. 
-  - [X] Plays Spotify playlists
-  - [X] Audio files are automatically added to a queue.
+  - [ ] Plays YouTube links.
+  - [ ] Plays Spotify links. 
+  - [ ] Plays Spotify playlists
+  - [ ] Audio files are automatically added to a queue.
   
-- [X] Pause:
+- [ ] Pause:
   - Usage: $pause
-  - [X] Pauses whatever audio file is playing.
+  - [ ] Pauses whatever audio file is playing.
   
-- [X] Resume:
+- [ ] Resume:
   - Usage: $resume
-  - [X] Resumes whatever audio file is paused.
+  - [ ] Resumes whatever audio file is paused.
   
-- [X] Stop:
+- [ ] Stop:
   - Usage: $stop
-  - [X] Completely cancels/stops whatever audio file is playing.
+  - [ ] Completely cancels/stops whatever audio file is playing.
   
-- [X] Queue:
+- [ ] Queue:
   - Usage: $queue
-  - [X] Adds audio files to queue.
+  - [ ] Adds audio files to queue.
   
 - [ ] Leaderboards:
   - Usage: $leaderboards
@@ -114,7 +114,7 @@ Initializer: $
   - Usage: $flip <user's_choice>
   - Herupa will randomly pick between heads and tails and let the user know if their <user's_choice> was correct.
   
-- [X] Assign:
+- [ ] Assign:
   - Usage: $assign <server_role>
   - Herupa will assign the author the given <role>. 
 
@@ -122,13 +122,13 @@ Initializer: $
   - Usage: $help
   - [ ] Sends relevant info for every command in the channel prompted.
   
-- [X] Welcome Message:
+- [ ] Welcome Message:
   - Usage: This command is automatic, cannot be called upon. 
-  - [X] Sends a welcome message when member joins the server.
+  - [ ] Sends a welcome message when member joins the server.
   
 - [ ] Goodbye Message:
   - Usage: This command is automatic, cannot be called upon. 
-  - [X] Sends a message saying that the member has left the server.
+  - [ ] Sends a message saying that the member has left the server.
   - [ ] Also sends a private message saying goodbye.
   
 - [ ] Watch Party:
