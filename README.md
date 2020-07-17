@@ -1,140 +1,48 @@
 ![alt text](https://github.com/MBarc/Herupa-DiscordBot/blob/master/herupaprofilepic.png)
 
 # Herupa-DiscordBot
-Open source discord bot that executes a collection of miscellaneous commands. 
-
-This bot utlizies multiple APIs: Discord.py (rewrite), PRAW, Selenium, and 
+Herupa is a custom bot made for the Chill Club Discord server. Most of her commands come from the day-to-day needs of the members within the server.
 
 Initializer: $
 
 ### Commands:
 
-- [ ] Birthday:
-  - Usage: $birthday MMDD 
-  - [X] Sends the birthday person a private message saying "Happy birthday <birthday person's name>, from <array of administrators' names> 
-  - [ ] Message includes birthday meme. 
+avatarpic {@member}: Herupa will respond with the avatar pic of the member mentioned.
 
-- [X] Herupa:
-  - Usage: $herupa
-  - [X] Herupa Bot joins the voice channel plays the 'Google Translate Audio of Herupa', then leaves.
-  
-- [x] Member of the week:
-  - Usage: This command is automatic, cannot be called upon.
-  - [X] Herupa picks a member of the week and sends them a congratulations message in the appropriate channel.
-  
-- [ ] Join:
-  - Usage: $join
-  - [ ] Joins voice channel.
-  
-- [ ] Leave:
-  - Usage: $leave
-  - [ ] Leaves voice channel.
-  
-- [ ] Play:
-  - Usage: $play <link>
-  - [ ] Plays YouTube links.
-  - [ ] Plays Spotify links. 
-  - [ ] Plays Spotify playlists
-  - [ ] Audio files are automatically added to a queue.
-  
-- [ ] Pause:
-  - Usage: $pause
-  - [ ] Pauses whatever audio file is playing.
-  
-- [ ] Resume:
-  - Usage: $resume
-  - [ ] Resumes whatever audio file is paused.
-  
-- [ ] Stop:
-  - Usage: $stop
-  - [ ] Completely cancels/stops whatever audio file is playing.
-  
-- [ ] Queue:
-  - Usage: $queue
-  - [ ] Adds audio files to queue.
-  
-- [ ] Leaderboards:
-  - Usage: $leaderboards
-  - [ ] Sends of list of top members in every category.
-    Example: 
-    
-            Most messages: <username> with X messages sent!
-            Voice chat: <username> joined X voice chats!
-            AFK: <username> went away X times!
-            Online: <username> came online X times!
-            Offline: <username> only came online X times!
-  
-- [ ] ASMR:
-  - Usage: $asmr
-  - [ ] Plays cringey asmr videos in voice chat.
-  
-- [ ] Dank Airhorn:
-  - Usage: $dank
-  - [ ] Goes in every voice chat, one by one, and plays the Dank Airhorn audio file.
-  
-- [X] Clear:
-  - Usage: $clear <int_number>
-  - [X] Deletes the latest <int_number> messages in the channel that the command was sent in.
-  
-- [ ] Copy Cat:
-  - Usage: $copy <user_name>
-  - **Parts of this function are currently not possible. This function will be completed as much as possible and marked finished.**
-  - [ ] Bot will repeat after target/<username> 
-  - [ ] Follows target to voice channel to play their own voice back at them.
-  
-- [ ] Record:
-  - Usage: $record
-  - **This function is currently not possible with the current version of the Discord API but it is planned for development.**
-  - [ ] Records all audio in a voice channel.
-  - [ ] Stops recording once author leaves voice channel.
-  
-- [ ] What To Watch:
-  - Usage: $w2w <_source_> <_genre_>
-  - [ ] Sends random link from the user's choice of either Netflix, Hulu, or Crunchy Roll.
-  
-- [ ] Survey:
-  - Usage: $survey <_prompt_> <_option 1_> <_option 2_> . . . <_option n_>
-  - [ ] Sends a survey monkey link.
-  
-- [ ] Reddit:
-  - Usage: $reddit <_subreddit_> <text_channel>
-  - [ ] Takes the given <_subreddit_> and will send every new post to the specified <text_channel>.
-  
-- [ ] Animal Facts:
-  - Usage: $animalfact <optional_animal> <optional_nsfw>
-  - [ ] Sends picture of animal.
-  - [ ] Sends a random facts about any animal, could be specified. The facts could be nsfw if specified.
-  - [ ] Will take either the scientific name or the common name as an argument.
+clear {number}: Delete messages in bulk. If no number specified, 5 messages are cleared.
 
-- [X] Rock, Paper, Scissors:
-  - Usage: $rps <user's_choice>
-  - [X] Herupa will randomly pick between rock, paper, or scissors and send it in the channel prompted.
-  
-- [X] Coin Flip:
-  - Usage: $flip <user's_choice>
-  - Herupa will randomly pick between heads and tails and let the user know if their <user's_choice> was correct.
-  
-- [ ] Assign:
-  - Usage: $assign <server_role>
-  - Herupa will assign the author the given <role>. 
+flip {heads or tails}: Have Herupa flip a coin. Specifying heads or tails is optional.
 
-- [ ] Help:
-  - Usage: $help
-  - [ ] Sends relevant info for every command in the channel prompted.
-  
-- [ ] Welcome Message:
-  - Usage: This command is automatic, cannot be called upon. 
-  - [ ] Sends a welcome message when member joins the server.
-  
-- [ ] Goodbye Message:
-  - Usage: This command is automatic, cannot be called upon. 
-  - [ ] Sends a message saying that the member has left the server.
-  - [ ] Also sends a private message saying goodbye.
-  
-- [ ] Watch Party:
-  - Usage: $watchparty <_command_> **or** <_title_of_video_>
-  - [ ] Bot will host a Netflix Party that users can join.
-  - [ ] pause command will pause the video.
-  - [ ] play command will resume the video.
-  - [ ] rewind <_int_> will rewind the video by <_int_> seconds
-  - [ ] fastforward <_int_> will fast forward the video by <_int_> seconds
+herupa {name}: Herupa will join the voice channel and say the name specified.
+
+leave: Tell Herupa to leave the voice channel.
+
+lenny: Herupa responds with ( ͡° ͜ʖ ͡°).
+
+lennymoney: Herupa responds with [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅].
+
+migrate {channel name}: Move everyone in your current voice channel to another voice channel.
+
+rps: Play rock, paper, scissors against Herupa.
+
+github: responds with a link to Herupa's Github page.
+
+isslocation: Get the coordinates and a map of where the International Space Station currently is.
+
+whoisinspace: Get the amount and names of astronauts currently in space.
+
+addfavorite: Add another member to your favorites. They must add you back in order to receive notifications of when each other joins a voice channel.
+
+removefavorite: Remove another member from your favorites.
+
+
+###Background Tasks
+AFK: Herupa automatically keeps track of how long members are AFK and moves them to the appropriate voice channels.
+
+Newbie: Responsible for assigning the newbie role to new members and assigning the chillies role once members accept to our ToS.
+
+Clear Channel: Clears out certain text channels everyday at 6:30am EST.
+
+On Member Join: Greets new members with a unique greeting.
+
+Favorites: Sends a notification to all of your favorites (assuming you're their favorite too) letting them know that you have connected to a voice chat.
