@@ -3,7 +3,7 @@
 # Herupa-DiscordBot
 Herupa is a custom bot made for the Chill Club Discord server. Most of her commands come from the day-to-day needs of the members within the server.
 
-Initializer: $
+Initializer: **$**
 
 ## Commands:
 
