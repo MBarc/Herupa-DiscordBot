@@ -36,7 +36,7 @@ addfavorite: Add another member to your favorites. They must add you back in ord
 removefavorite: Remove another member from your favorites.
 
 
-###Background Tasks:
+### Background Tasks:
 
 AFK: Herupa automatically keeps track of how long members are AFK and moves them to the appropriate voice channels.
 
